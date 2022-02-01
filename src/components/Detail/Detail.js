@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 
 const Detail = () => {
   const coins = useSelector((state) => state.main);
-  console.log(coins);
 
   const params = useParams();
   const { id } = params;

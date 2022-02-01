@@ -10,7 +10,7 @@ export const fetchCoins = (payload) => ({
 });
 
 export const fetchCoinsFromAPI = () => (dispatch) => {
-  axios.get('https://api.coinlore.net/api/tickers/?start=0&limit=20')
+  axios.get('https://api.coinlore.net/api/tickers/?start=0&limit=100')
     .then((response) => {
       dispatch(fetchCoins(response.data.data));
     });

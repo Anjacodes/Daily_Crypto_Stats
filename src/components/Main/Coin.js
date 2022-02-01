@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Coin(coin) {
   const element = coin.coin; /*eslint-disable-line*/
@@ -11,9 +11,9 @@ function Coin(coin) {
         $
         {element.price}
       </p>
-      <Link to={`/details/${element.id}`}>
+      {/* <Link to={`/details/${element.id}`}>
         Details
-      </Link>
+      </Link> */}
     </div>
   );
 }
