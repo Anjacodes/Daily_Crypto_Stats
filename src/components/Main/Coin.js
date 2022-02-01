@@ -1,21 +1,30 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'; /*eslint-disable-line*/
 
-function Coin(coin) {
-  const element = coin.coin; /*eslint-disable-line*/
+function Coin({ coin }) {
+  const { symbol, name, price } = coin;
   return (
     <div className="p-3 pt-8 pb-8 flex flex-col items-center border-2 odd:bg-white even:bg-slate-100">
-      <h2>{element.symbol}</h2>
-      <h3>{element.name}</h3>
+      <h2>{symbol}</h2>
+      <h3>{name}</h3>
       <p>
         $
-        {element.price}
+        {price}
       </p>
-      {/* <Link to={`/details/${element.id}`}>
-        Details
-      </Link> */}
     </div>
   );
 }
 
 export default Coin;
+
+Coin.propTypes = {
+  coin: PropTypes.objectOf(PropTypes.string, PropTypes.number),
+};
+
+Coin.defaultProps = {
+  coin: {
+    symbol: 'BTC',
+    name: 'Bitcoin',
+    price: '$38825.20',
+  },
+};
