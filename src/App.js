@@ -12,7 +12,15 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/Detail" element={<Detail />} />
+        <Route path="/details/:id" element={<Detail />} />
+        <Route
+          path="*"
+          element={(
+            <main>
+              <p>There&apos;s nothing here!</p>
+            </main>
+            )}
+        />
       </Routes>
     </BrowserRouter>
   );
