@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Outlet, Link } from 'react-router-dom';
 import { fetchCoinsFromAPI } from '../../redux/main';
 import Coin from './Coin';
+import crypto from '../../assets/images/cryptocurrency.png';
 
 function Main() {
   const coins = useSelector((state) => state.main);
@@ -29,22 +30,28 @@ function Main() {
 
   const content = coins.map((coin) => (<Link to={`/details/${coin.id}`} key={coin.id}><Coin coin={coin} /></Link>));
   return (
-    <div>
-      <div>
-        <h2>
-          Total Coin Count:
-          {coinCount}
-        </h2>
-        <p>
-          Active Markets:
-          {activeMarkets}
-        </p>
-        <p>
-          Total Volume:
-          {totalVolume}
-        </p>
+    <div className="grid place-items-center min-h-screen">
+      <div className="m:flex-row m:flex m:items-center m:py-6">
+        <img className="w-[85vw] m:w-[50vw] l:w-[40vw] xl:w-[20vw]" src={crypto} alt="crypto coins" />
+        <div className="flex flex-col items-center py-10 m:items-start m:pl-5">
+          <h2 className="text-2xl">
+            Total Coin Count:
+            {' '}
+            {coinCount}
+          </h2>
+          <p className="text-2xl">
+            Active Markets:
+            {' '}
+            {activeMarkets}
+          </p>
+          <p className="text-2xl">
+            Total Volume:
+            {' '}
+            {totalVolume}
+          </p>
+        </div>
       </div>
-      <div className="grid grid-cols-2 mt-6 grid-flow-row-dense">{content}</div>
+      <div className="grid w-[100vw] xs:grid-cols-2 m:grid-cols-4 l:grid-cols-6 text-right">{content}</div>
 
       <Outlet />
     </div>
