@@ -37,16 +37,15 @@ const Detail = () => {
         <li className="flex justify-between px-[20%] text-[1.5em] li py-3">
           <h2>Change in 24 hours: </h2>
           <p>
-            {' '}
-            $
             {coin[0].change24}
+            %
           </p>
         </li>
         <li className="flex justify-between px-[20%] text-[1.5em] li py-3">
           <h2>Change in 7 days: </h2>
           <p>
-            $
             {coin[0].change7d}
+            %
           </p>
         </li>
       </ul>

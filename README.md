@@ -1,29 +1,37 @@
 <h1>Crypto Currency Daily Stats</h1>
 
-This web application shows the current exchange rate of 20 major crypto currencies. The application uses live data from the Coinlore API and will allow users to:
+This web application shows the current exchange rate of 100 major crypto currencies. The application uses live data from the Coinlore API and will allow users to:
 
 <ul>
-  <li>See the current exchange rates for 20 major crypto currencies</li>
+  <li>See the current exchange rates for 100 major crypto currencies</li>
   <li>See details for each currency</li>
 </ul>
 
 <br>
 
 
-<!-- <img width="710" alt="rockets preview" src="./src/images/Rockets.png"><br>
+<img width="710" alt="rockets preview" src="./src/assets/images/crypto1.png"><br>
 
-<img width="710" alt="missions preview" src="./src/images/Missions.png"><br>
+<img width="710" alt="missions preview" src="./src/assets/images/crypto2.png"><br>
 
-<img width="710" alt="my profile preview" src="./src/images/Profile.png"><br> -->
+<img width="710" alt="my profile preview" src="./src/assets/images/crypto3.png"><br>
 
+<h2>Live Demo</h2>
+
+<a href="https://inspiring-johnson-ba0a03.netlify.app/">View Live Link</a><br>
+<a href="https://www.loom.com/share/ef165aafac2e442c9717af83e03473bd">View Video Demo</a>
+
+<br>
 
 <h2>🧩 Built With</h2>
 
-React.js
-Redux
-TailwindCSS
+React.js<br>
+Redux<br>
+TailwindCSS<br>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<br>
 
 <h2>📚 Getting Started</h2>
 
