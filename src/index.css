@@ -4,6 +4,8 @@
 @tailwind utilities;
 /*stylelint-enable*/
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -60,7 +60,7 @@ function Main() {
           </p>
         </div>
       </div>
-      <input onChange={((event) => setSearchTerm(event.currentTarget.value))} className="w-[100vw] pl-5 text-black" type="text" placeholder="Filter Coins by Name" />
+      <input onChange={((event) => setSearchTerm(event.currentTarget.value))} className="w-[100vw] pl-5 py-3 text-black" type="text" placeholder="Filter Coins by Name" />
 
       <div className="grid w-[100vw] xs:grid-cols-2 m:grid-cols-4 l:grid-cols-6 text-right">{content}</div>
 
