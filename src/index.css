@@ -1,27 +1,32 @@
-body {
+/*stylelint-disable*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*stylelint-enable*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #bfa2db;
+  color: white;
+}
+
+.coin {
+  background-color: #6867ac;
+}
+
+.li:nth-child(even) {
+  background-color: #bfa2db;
+}
+
+.li:nth-child(odd) {
+  background-color: #6867ac;
 }
